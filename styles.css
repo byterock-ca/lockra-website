@@ -1,0 +1,165 @@
+:root {
+    --background: #0f1115;
+    --surface: #171a21;
+    --text-primary: #cccccc;
+    --text-secondary: #b5bcc9;
+    --text-brand: #2d8437;
+    --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 48px 24px;
+    background: var(--background);
+    color: var(--text-primary);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 40px;
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--text-brand);
+
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.subtitle {
+    margin-top: 14px;
+    margin-bottom: 40px;
+
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.section {
+    margin-bottom: 28px;
+}
+
+p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 32px;
+
+    color: #7d8596;
+    font-size: 14px;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    .card {
+        padding: 28px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+.hero {
+    text-align: left;
+}
+
+.actions {
+    margin-top: 36px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 20px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition:
+        transform 0.18s ease,
+        opacity 0.18s ease,
+        background 0.18s ease;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+
+.button.primary {
+    background: #f5f7fa;
+    color: #0f1115;
+}
+
+.button.primary:visited {
+    color: #0f1115;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 28px 0px 28px 0px;
+
+    color: var(--text-secondary);
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition:
+        opacity 0.18s ease,
+        transform 0.18s ease;
+}
+
+.back-link:hover {
+    opacity: 0.9;
+    transform: translateX(-1px);
+}
